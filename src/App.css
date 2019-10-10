@@ -1,0 +1,97 @@
+body {
+  background-color: #ebffff;
+  color: #002727;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #58a7a7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.github-profile {
+  margin: 10px auto;
+  width: 20%;
+  background-color: rgb(0, 196, 196);
+  transition: transform 0.2s;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.github-profile:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 75px;
+  border-radius: 5px;
+}
+
+.info {
+  /* display: inline-block; */
+  /* margin-left: 12px; */
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+form {
+  background-color: rgb(0, 137, 137);
+  padding: 2rem 4rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 5px;
+  width: 450px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-button {
+  background-color: #002727;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffff;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.form-button:hover {
+  background: none;
+  border: 1px solid #ffff;
+}
