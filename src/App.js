@@ -22,7 +22,7 @@ const testData = [
 
 const CardList = (props) => {
   return (
-    <div>
+    <div className='gridView'>
       {props.profiles.map((profile) => (
         <Card key={profile.id} {...profile} />
       ))}
