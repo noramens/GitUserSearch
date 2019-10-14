@@ -3,31 +3,8 @@ body {
   color: #002727;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #58a7a7;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-
 .github-profile {
-  /* margin: auto; */
+  margin: auto;
   width: 100%;
   background-color: rgb(0, 196, 196);
   transition: transform 0.2s;
@@ -36,6 +13,10 @@ body {
   display: flex;
   /* justify-content: space-evenly;*/
   align-items: center;
+}
+
+.info{
+  padding-left: 2rem;
 }
 
 .gridView {
@@ -66,11 +47,14 @@ img {
 
 form {
   background-color: rgb(0, 137, 137);
-  padding: 2rem 4rem;
+  width: 100vw;
+  padding: 2rem;
   margin-bottom: 1rem;
   font-size: 1rem;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+
 }
 
 .header {
@@ -82,15 +66,16 @@ form {
 .search {
   background: rgba(255, 255, 255, 0.2);
   border: none;
-  padding: 5px;
-  width: 450px;
+  padding: 1rem;
+  width: 50vw;
   border-radius: 5px;
   font-size: 1rem;
+ 
 }
 
 .form-button {
   background-color: #002727;
-  padding: 8px 10px;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
   color: #ffff;
@@ -101,4 +86,29 @@ form {
 .form-button:hover {
   background: none;
   border: 1px solid #ffff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+
+    form{
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .search{
+      margin-top: 1rem;
+      width: 37vw;
+    }
+
+    .form-button{
+      width: 30vw;
+      padding: 1.1rem;
+    }
+
+    .gridView{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    
 }
