@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 Get a copy of this project on your machine using:
 
 ```
-git clone https://github.com/noraboamaah/Weather-with-React.git
+https://github.com/noraboamaah/GitUserSearch.git
 ```
 
 ## How it works
