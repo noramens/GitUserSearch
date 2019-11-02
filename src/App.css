@@ -11,19 +11,16 @@ body {
   padding: 5px;
   border-radius: 5px;
   display: flex;
-  /* justify-content: space-evenly;*/
   align-items: center;
 }
 
-.info{
+.info {
   padding-left: 2rem;
 }
 
 .gridView {
   margin: auto;
-
   width: 80%;
-  background-color: #ffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: stretch;
@@ -48,13 +45,13 @@ img {
 form {
   background-color: rgb(0, 137, 137);
   width: 100vw;
-  padding: 2rem;
+  padding: 2%;
   margin-bottom: 1rem;
   font-size: 1rem;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-
 }
 
 .header {
@@ -66,19 +63,22 @@ form {
 .search {
   background: rgba(255, 255, 255, 0.2);
   border: none;
-  padding: 1rem;
-  width: 50vw;
+  padding: 0.5rem;
+  width: 30vw;
   border-radius: 5px;
   font-size: 1rem;
- 
+}
+
+.search:focus {
+  outline: none;
 }
 
 .form-button {
   background-color: #002727;
-  padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
   color: #ffff;
+  padding: 0.7rem 0.6rem 0.5rem 0.6rem;
   margin-left: 5px;
   font-weight: bold;
 }
@@ -89,26 +89,18 @@ form {
 }
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
+  form {
+    display: block;
+    margin-bottom: 2rem;
+  }
 
-    form{
-      display: block;
-      margin-bottom: 2rem;
-    }
+  .search {
+    margin-top: 1rem;
+    width: 37vw;
+  }
 
-    .search{
-      margin-top: 1rem;
-      width: 37vw;
-    }
-
-    .form-button{
-      width: 30vw;
-      padding: 1.1rem;
-    }
-
-    .gridView{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    
+  .gridView {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
